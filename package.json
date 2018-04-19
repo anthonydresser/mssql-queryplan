@@ -1,0 +1,38 @@
+{
+    "name": "mssql-queryplan",
+    "displayName": "mssql-queryplan",
+    "description": "Query Plan for mssql",
+    "version": "0.0.1",
+    "publisher": "anthonydresser",
+    "engines": {
+        "vscode": "^1.19.0",
+        "sqlops": "*"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sayHello"
+    ],
+    "main": "./out/extension",
+    "contributes": {},
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install && node ./node_modules/sqlops/bin/install"
+    },
+    "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.0.43",
+        "del": "^3.0.0",
+        "gulp": "^3.9.1",
+        "gulp-typescript": "^4.0.2",
+        "gulp-util": "^3.0.8",
+        "sqlops": "github:anthonydresser/vscode-extension-vscode",
+        "tslint": "^5.8.0",
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "webpack": "^4.6.0"
+    },
+    "dependencies": {
+        "html-query-plan": "git://github.com/anthonydresser/html-query-plan.git#2.4"
+    }
+}
